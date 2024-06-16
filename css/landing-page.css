@@ -48,11 +48,19 @@ h6 {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 50%;
+    max-width: 400px; /* 设置最大宽度，这里假设不希望横线过宽 */
+    margin: 0 auto; /* 居中显示 */
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-sizing: border-box; /* 确保宽度包括边框和内边距 */
 }
 
+@media(max-width:767px) {
+    .intro-divider {
+        width: 80%; /* 在小屏幕下，将宽度调整为屏幕宽度的80% */
+    }
+}
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
