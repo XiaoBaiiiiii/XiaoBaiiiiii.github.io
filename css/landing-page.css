@@ -56,11 +56,6 @@ h6 {
     box-sizing: border-box; /* 确保宽度包括边框和内边距 */
 }
 
-@media(max-width:767px) {
-    .intro-divider {
-        width: 80%; /* 在小屏幕下，将宽度调整为屏幕宽度的80% */
-    }
-}
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
