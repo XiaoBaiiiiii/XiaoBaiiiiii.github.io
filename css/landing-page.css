@@ -57,7 +57,7 @@ h6 {
 }
 
 .intro-social-buttons li {
-    margin-top: 10px; /* 调整每个社交图标之间的顶部间距 */
+    margin-top: 20px; /* 调整每个社交图标之间的顶部间距 */
 }
 
 .intro-message > h3 {
@@ -75,7 +75,7 @@ h6 {
 
     ul.intro-social-buttons > li {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         padding: 0;
         margin-top: 20px;
     }
