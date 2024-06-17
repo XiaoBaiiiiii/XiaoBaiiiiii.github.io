@@ -5,6 +5,77 @@ subTitle: Now you can know everything in the world, but the only way you're find
 ---
 {% include hero.html %}
 
+<ul class="list-inline intro-social-buttons">
+	{% for social in site.social %}
+	<li>
+	  {% if social.title == 'wechat' %}
+	  <a href="#" class="btn btn-default btn-lg" onclick="showWeChatQRCode()"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+	  {% else %}
+	  <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+	  {% endif %}
+	</li>
+	{% endfor %}
+</ul>
+
+<script>
+    function showWeChatQRCode() {
+      // 检查是否已经存在二维码模态框，防止重复添加
+      if (document.querySelector('.wechat-modal')) return;
+
+      // 创建模态框
+      let modal = document.createElement('div');
+      modal.classList.add('wechat-modal');
+
+      // 添加二维码图片
+      let qrCodeImg = document.createElement('img');
+      qrCodeImg.src = './images/wechat-qrcode.png'; // 替换为您的实际路径
+      qrCodeImg.alt = 'WeChat QR Code';
+      modal.appendChild(qrCodeImg);
+
+      // 添加关闭按钮
+      let closeButton = document.createElement('button');
+      closeButton.innerText = 'Close';
+      closeButton.classList.add('close-button');
+      closeButton.onclick = function() {
+        document.body.removeChild(modal);
+      };
+      modal.appendChild(closeButton);
+
+      // 添加模态框到页面
+      document.body.appendChild(modal);
+
+      // 样式调整
+      let styles = `
+        .wechat-modal {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          padding: 20px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          z-index: 1000;
+        }
+        .wechat-modal img {
+          max-width: 100%;
+          height: auto;
+        }
+        .close-button {
+          margin-top: 10px;
+          padding: 5px 10px;
+          background: #f44336;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      `;
+      let styleSheet = document.createElement("style");
+      styleSheet.type = "text/css";
+      styleSheet.innerText = styles;
+      document.head.appendChild(styleSheet);
+    }
+  </script>
 <div class="container">
 	<div class="row">
 	{% if site.posts.size > 0 %}
