@@ -21,11 +21,11 @@ plugins:
 # 3rd Party Settings
 social:
   - title: wechat
-    url: https://twitter.com/SBootstrap
+    url: 
   - title: github
     url: https://github.com/IronSummitMedia/startbootstrap
   - title: linkedin
-    url: 
+    url: https://linkedin.com/
 
 # Additional Settings from second file
 baseurl: "/zolan" # the subpath of your site, e.g. /blog
