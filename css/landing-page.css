@@ -56,6 +56,10 @@ h6 {
     box-sizing: border-box; /* 确保宽度包括边框和内边距 */
 }
 
+.intro-social-buttons li {
+    margin-top: 10px; /* 调整每个社交图标之间的顶部间距 */
+}
+
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
@@ -73,6 +77,7 @@ h6 {
         display: block;
         margin-bottom: 20px;
         padding: 0;
+        margin-top: 20px;
     }
 
     ul.intro-social-buttons > li:last-child {
