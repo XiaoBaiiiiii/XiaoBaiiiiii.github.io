@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Faster-LIO"
+title:  "Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels"
 date:   2021-11-02 18:05:55 +0300
 image:  10.jpg
-# tags:   Jekyll
 ---
 1.	Applied the incremental voxels (iVox) as point cloud spatial data structure (modified from the traditional voxels) to the state-of-the-art positioning algorithm Fast-LIO2 to support incremental insertion and parallel approximated KNN queries.
 2.	Proposed the linear iVox and Pseudo Hilbert Curve (PHC) iVox as two alternative underlying structures in the algorithm.
