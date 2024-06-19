@@ -1,26 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-05-29 18:05:55 +0300
+title:  "Faster-LIO"
+date:   2021-11-02 18:05:55 +0300
 image:  10.jpg
-tags:   Jekyll
+# tags:   Jekyll
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+1.	Applied the incremental voxels (iVox) as point cloud spatial data structure (modified from the traditional voxels) to the state-of-the-art positioning algorithm Fast-LIO2 to support incremental insertion and parallel approximated KNN queries.
+2.	Proposed the linear iVox and Pseudo Hilbert Curve (PHC) iVox as two alternative underlying structures in the algorithm.
+3.	Update the iVox with the least recently used (LRU) cache strategy. Move the newly created voxels and the newly used voxels back, and delete those that have not been used for a fixed period.
+4.	The experiments on open-sourced datasets show that the method can significantly increase the running speed with the same accuracy. The paper Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using Parallel Sparse Incremental Voxels was published on RA-L 2022.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
