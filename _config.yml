@@ -1,20 +1,16 @@
-url: http://yoursite.com
-title: Your Awesome Site
-email: your-email@domain.com
-author: Your Name
+url: https://xiaobaiiiiii.github.io/
+title: Chunge Bai's Homepage
+email: bcg971004@icloud.com
+author: Chunge Bai
 description: >
-  Write an awesome description for your new site here.
-  You can edit this line in _config.yml. It will appear in your document
-  head meta (for Google search results) and in your feed.xml site
-  description.
-copyright: 'Copyright &copy; 2015 Your Name. All Rights Reserved.'
-credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+  Welcome to Chunge Bai's Homepage! Discover insightful content and more.
+copyright: 'Copyright &copy; 2024 Chunge Bai. All Rights Reserved.'
+credits: 'Credits: This site uses a free, open source Bootstrap theme from <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
 # Jekyll & Plugins
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll/tagging
 
@@ -23,14 +19,12 @@ social:
   - title: wechat
     url: 
   - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://github.com/XiaoBaiiiiii
   - title: linkedin
-    url: https://linkedin.com/
+    url: www.linkedin.com/in/chunge-bai-04991a309
 
 # Additional Settings from second file
-baseurl: "/zolan" # the subpath of your site, e.g. /blog
-paginate: 5
-paginate_path: "/page/:num"
+baseurl: "/chunge_bai" # the subpath of your site, e.g. /blog
 defaults:
   - scope:
       path: '_pages'
