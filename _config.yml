@@ -24,7 +24,7 @@ social:
     url: www.linkedin.com/in/chunge-bai-04991a309
 
 # Additional Settings from second file
-baseurl: "/chunge_bai" # the subpath of your site, e.g. /blog
+baseurl: "/projects" # the subpath of your site, e.g. /blog
 defaults:
   - scope:
       path: '_pages'
