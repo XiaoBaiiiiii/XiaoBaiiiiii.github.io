@@ -41,38 +41,19 @@
       }
     }
   }
-
-  .post__tags {
-   .post__tags-tag {
-     position: relative;
-     padding-left: 15px;
-     font-weight: 700;
-     &:before {
-       content: "";
-       position: absolute;
-       top: 50%;
-       left: 0;
-       transform: translateY(-50%);
-       width: 5px;
-       height: 5px;
-       border-radius: 50%;
-       background: $dark;
-     }
-   } 
-  }
 }
 
 .post-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $light-gray;
+    background-size: contain;// 背景图像将被缩放到完全覆盖其背景区域，保持其纵横比，但可能会部分溢出背景区域。
+    background-position: center;// 背景图像将被定位在背景区域的中心
+    background-repeat: no-repeat;// 背景图像不会重复。
+    background-color: $light-gray;// 设置背景颜色为浅灰色（这个变量可能在你的SCSS或CSS预处理器中定义）
   &:after {
-    content: "";
-    display: table;
-    width: 100%;
-    min-height: 300px;
-    padding-top: 50%;
+    content: "";//生成一个空内容。
+    display: table;//使伪元素表现为表格。
+    width: 100%;//伪元素的宽度为其包含元素的100%。
+    min-height: 300px;//伪元素的最小高度为300像素。
+    padding-top: 50%;//伪元素的顶部内边距为其宽度的50%。
   }
 }
 
