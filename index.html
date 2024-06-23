@@ -5,7 +5,7 @@ subTitle: Now you can know everything in the world, but the only way you're find
 ---
 {% include hero.html %}
 
-<div class="container">
+<div id="projects" class="container">
     <div class="row">
         {% if site.posts.size > 0 %}
             {% for post in site.posts %}
@@ -14,3 +14,5 @@ subTitle: Now you can know everything in the world, but the only way you're find
         {% endif %}
     </div>
 </div>
+
+{% include publications.html %}
