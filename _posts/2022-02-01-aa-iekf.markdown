@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AA-IEKF"
+title:  "Anderson Acceleration for on-Manifold Iterated Error State Kalman Filters"
 date:   2022-02-01 18:05:55 +0300
 image:  aa-iekf.gif
 description: This work introduces a formulation for integrating Anderson Acceleration into the iterated error state Kalman filter, and addresses the challenge of switching tangent spaces during iteration, a distinction from AA-ICP and similar methods, which can accelerate the convergence speed of residuals when using Kalman filtering for iterative optimization.
