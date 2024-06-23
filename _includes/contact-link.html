@@ -1,7 +1,13 @@
 <div class="contact">
   <ul class="contact__list list-reset">
-    {% if site.data.settings.gmail %}
-      <li><a href="{{ site.data.settings.twitter }}"><i class="ion ion-logo-twitter"></i></a></li>
-    {% else %} {% endif %}
+    {% if site.data.contact.github %}
+      <li><a href="{{ site.data.contact.github }}"><i class="ion ion-logo-github"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.data.contact.gmail %}
+      <li><a href="mailto:{{ site.data.contact.gmail }}"><i class="ion ion-md-mail"></i> Gmail</a></li>
+    {% endif %}
+    {% if site.data.contact.telephone %}
+      <li><a href="tel:{{ site.data.contact.telephone }}"><i class="ion ion-ios-call"></i> Telephone</a></li>
+    {% endif %}
   </ul>
 </div>

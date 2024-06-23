@@ -26,9 +26,10 @@ author:
 
 #-------------------------------
 # Contact links
-github: https://github.com/XiaoBaiiiiii
-gmail: bcg971004@gmail.com
-linkedin:
+contact:
+  github: https://github.com/XiaoBaiiiiii
+  gmail: bcg971004@gmail.com
+  telephone: +86 15545110569
 
 #-------------------------------
 # Comment Section (Disqus)
