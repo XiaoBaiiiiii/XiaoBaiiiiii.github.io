@@ -3,6 +3,7 @@ layout: post
 title:  "AA-IEKF"
 date:   2022-02-01 18:05:55 +0300
 image:  aa-iekf.gif
+description: This work introduces a formulation for integrating Anderson Acceleration into the iterated error state Kalman filter, and addresses the challenge of switching tangent spaces during iteration, a distinction from AA-ICP and similar methods, which can accelerate the convergence speed of residuals when using Kalman filtering for iterative optimization.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "COLMAP-PCD"
+title:  "Colmap-PCD: An Open-source Tool for Fine Image-to-point cloud Registration"
 date:   2022-09-01 18:05:55 +0300
 image:  colmap-pcd.gif
+description: This work introduces a pipeline that aligns asynchronously acquired images with LiDAR point clouds to get localization results with an accurate scale. Experiments on self-collected datasets demonstrates this method is effectiveness and stability in image accumulation. This pipeline enables flexible detail-level adjustments in the reconstruction area, making it suitable for collaborative large-scale scene reconstruction.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
