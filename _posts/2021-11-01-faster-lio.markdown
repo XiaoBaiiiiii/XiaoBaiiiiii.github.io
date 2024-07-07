@@ -4,6 +4,7 @@ title:  "Faster-LIO: Lightweight Tightly Coupled Lidar-Inertial Odometry Using P
 date:   2021-11-02 18:05:55 +0300
 image:  faster-lio2.jpg
 description: An incremental voxel-based Lidar-inertial odometry for fast-tracking spinning and solid-state lidar scans. Incremental voxels (iVox) are used as point cloud local-map, supporting highly efficient dynamic map update and KNN query. Our method can get 1000-2000 Hz for solid-state lidar and 200+ Hz for 32-line spinning lidar in modern CPU, with almost the same accuracy as other methods.
+url: /styleguide/
 
 ---
 1.	Applied the incremental voxels (iVox) as point cloud spatial data structure (modified from the traditional voxels) to the state-of-the-art positioning algorithm Fast-LIO2 to support incremental insertion and parallel approximated KNN queries.
